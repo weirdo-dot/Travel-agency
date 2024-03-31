@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-red">
+    <a class="navbar-brand" href="#">Travel Agency</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destinations">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tours">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to the best Travel Agency</h1>
+      <p>Your gateway to unforgettable experiences</p>
+      <a href="#contact" class="btn btn-danger btn-lg">Book Now</a>
+    </div>
+  </section>
+
+<!-- Destinations Section -->
+<section id="destinations" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Popular Destinations</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card destination-card">
+          <img src="pexels-photo-5374152.jpeg" class="card-img-top" alt="Destination 1">
+          <div class="card-body">
+            <h5 class="card-title">Bali</h5>
+            <p class="card-text">Explore the beauty of Bali with our exclusive packages.</p>
+            <a href="#" class="btn btn-danger">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card destination-card">
+          <img src="pexels-photo-3250358.jpeg" class="card-img-top" alt="Destination 2">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text">Discover the wonders and beauty of paris with our beautiful locations and amazing tour guides</p>
+            <a href="#" class="btn btn-danger">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card destination-card">
+          <img src="pexels-photo-2678418.jpeg" class="card-img-top" alt="Destination 3">
+          <div class="card-body">
+            <h5 class="card-title">Seychelles</h5>
+            <p class="card-text">Experience the wonders and beauty of Seychelles with our beautiful location and tour guides.</p>
+            <a href="#" class="btn btn-danger">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Tours Section -->
+<section id="tours" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Tour Packages</h2>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  Bali
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Explore the beauty of our Bali Package <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Paris
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Discover the wonders of our Paris Package. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Seychelles
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Experience the adventure of our Seychelles Package. <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">
+              Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination of Interest</label>
+              <input type="text" class="form-control" id="destination" placeholder="Enter your desired destination">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class='fa fa-facebook'></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
